@@ -1,0 +1,183 @@
+.main-container {
+  max-width: 1200px;  
+  margin: 0 auto;     
+  padding: 0 20px;    
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.top-nav {
+    
+  background-color: #131921;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.top-nav img {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #febd69;
+  cursor: pointer;
+}
+
+.top-nav .right-links {
+  margin-left: 20px;
+}
+
+.top-nav .right-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+
+.second-nav {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  padding: 8px 20px;
+}
+
+.second-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.second-nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+.third-nav {
+  background-color: #FBFAFB;
+  color: black;
+  display: flex;
+  padding: 8px 20px;
+}
+
+.third-nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.third-nav a:hover {
+  text-decoration: underline;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  margin-top: 30px;
+}
+
+.button1, .button2, .button3 {
+  margin: 0;
+  padding: 12px 32px;
+  position: relative;
+}
+
+.banner-img{
+  display: flex;
+  justify-content: center;
+  height: 100px; 
+  margin-top: 30px;
+}
+
+.product-table {
+  margin: 0 auto; 
+  border-spacing: 20px; 
+}
+
+.product-table p{
+    height: 30px;
+    width: 248px; 
+}
+
+.product-table td {
+  height: 222px;
+  width: 248px;  
+  padding: 10px;
+  background: #F6F9F8;
+  text-align: center;
+}
+
+.product-table img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-table span {
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+
+.delivery-type{
+    margin: 0 auto; 
+    border-spacing:0px; 
+}
+
+
+.delivery-type td{
+    margin: 0;
+    padding: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.delivery-type img{
+    width: 98%;
+    justify-content: center;
+    
+}
+
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+
+.faq-section details {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.faq-section summary {
+  cursor: pointer;
+  font-weight: bold;
+}

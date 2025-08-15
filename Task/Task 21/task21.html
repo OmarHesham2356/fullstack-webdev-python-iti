@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img#img {
+        width: 400px;
+        height: 250px;
+        object-fit: cover; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My first JavaScript</h1>
+
+    <p id="demo">JavaScript is great</p>
+
+    <script>
+      function myFunc(sw) {
+        var pic;
+        if (sw == 0) {
+          pic =
+            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.U_VJuupQohwnzXcKMztqWgHaEo%3Fpid%3DApi&f=1&ipt=b325968fa0a2b3fa3d0cd8c59fbab71a877748b949fd94a83bf1517b2e03e151";
+        } else if (sw == 1) {
+          pic =
+            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.dpreview.com%2Ffiles%2Fp%2Farticles%2F7952219469%2Fgoogle-imagen-lead-image.jpeg&f=1&nofb=1&ipt=c16aa4235b354454b73c3133b94ea7ffe0bca24d620e3b4a05275e5091260e6c";
+        } else {
+          pic =
+            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F669502%2Fpexels-photo-669502.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-goumbik-669502.jpg%26fm%3Djpg&f=1&nofb=1&ipt=9c4aaf044b1f05580389ee20be89d9f0319bb017381bc6d77e3a24f7ae9a640c";
+        }
+        document.getElementById("img").src = pic;
+      }
+    </script>
+    <img
+      id="img"
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fawesome-view-river-sky_954226-164279.jpg&f=1&nofb=1&ipt=970ab3a7d9a0f76a4cb18f6b5357e488945d0c010eb85719ced5a3dda608caa2"
+    />
+    <br />
+    <button type="button"><h1 onclick="myFunc(0)">First image</h1></button>
+    <button type="button"><h1 onclick="myFunc(1)">second image</h1></button>
+    <button type="button"><h1 onclick="myFunc(2)">third image</h1></button>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <h1 id = "h1">My first JavaScript</h1>
+
+    <p id="demo">JavaScript is great</p>
+    <img id="img" src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimgv3.fotor.com%2Fimages%2Fgallery%2FBlue-Sky.jpg&f=1&nofb=1&ipt=74de8e32243771e14fc93ceea4a76d25e7c1ba66b50ffb57ab69a8f1a837a02d">
+
+
+    <script>
+      function myFunc() {
+        document.getElementById("h1").innerHTML = "Hello Javascript"
+        document.getElementById("demo").innerHTML = "Hello Javascript"
+        document.getElementById("demo").style.fontSize = "20px";
+        document.getElementById("demo").style.color = "blue";
+        document.getElementById("demo").style.background = "green";
+        document.getElementById("img").src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Fsunset-evening-sky-clouds-sun-behind-clouds-dramatic-2560x1440-9158.jpg&f=1&nofb=1&ipt=b3db0e9a03d181bcf032f6f47d4b5fe004e4789fac825062f6a027dfa9514360"
+      }
+    </script>
+    <br>
+    <button type="button"><h1 onclick="myFunc()">Click here</h1></button>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+
+ul.sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  position: fixed;
+  background-color: #f1f1f1;
+  top: 45px; 
+  left: 0;
+  width: 200px;
+  height: 100%;
+}
+
+ul.sidebar li a {
+  display: block;           
+  width: 100%;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.sidebar li a:hover {
+  background-color: #ddd;
+}
+
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<ul class="navbar">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<ul class="sidebar">
+  <li class="sidebar-title">CSS Tutorial</li>
+  <li><a href="#">CSS HOME</a></li>
+  <li><a href="#">CSS Introduction</a></li>
+  <li><a href="#">CSS Syntax</a></li>
+  <li><a href="#">CSS Selectors</a></li>
+  <li><a href="#">CSS How To</a></li>
+  <li><a href="#">CSS Comments</a></li>
+  <li><a href="#">CSS Colors</a></li>
+  <li><a href="#">CSS Backgrounds</a></li>
+  <li><a href="#">CSS Borders</a></li>
+</ul>
+
+</body>
+</html>
