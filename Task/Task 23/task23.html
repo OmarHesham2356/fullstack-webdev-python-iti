@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Selector Examples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("*").hide();
+        });
+
+        $("#btn2").click(function () {
+          $(this).text("Clicked");
+        });
+
+        $("#btn3").click(function () {
+          $("p.intro").hide();
+        });
+
+        $("#btn4").click(function () {
+          $("p:first").hide();
+        });
+
+        $("#btn5").click(function () {
+          $("ul li:first").hide();
+        });
+
+        $("#btn6").click(function () {
+          $("ul li:first-child").hide();
+        });
+
+        $("#btn7").click(function () {
+          $("[href]").hide();
+        });
+
+        $("#btn8").click(function () {
+          $("a[target='_blank']").hide();
+        });
+
+        $("#btn9").click(function () {
+          $("a[target!='_blank']").hide();
+        });
+
+        $("#btn10").click(function () {
+          $(":button").hide();
+        });
+
+        $("#btn11").click(function () {
+          $("tr:even").hide();
+        });
+
+        $("#btn12").click(function () {
+          $("tr:odd").hide();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2 class="intro">This is a heading</h2>
+    <p class="intro">This is a paragraph with class intro.</p>
+    <p>This is another paragraph.</p>
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+    </ul>
+
+    <a href="https://google.com" target="_blank">Google (blank)</a><br />
+    <a href="https://yahoo.com">Yahoo (no blank)</a>
+
+    <table border="1">
+      <tr>
+        <td>Row 1</td>
+      </tr>
+      <tr>
+        <td>Row 2</td>
+      </tr>
+      <tr>
+        <td>Row 3</td>
+      </tr>
+      <tr>
+        <td>Row 4</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h3>Try Selectors:</h3>
+    <button id="btn1">Select all (*)</button>
+    <button id="btn2">$(this)</button>
+    <button id="btn3">p.intro</button>
+    <button id="btn4">p:first</button>
+    <button id="btn5">ul li:first</button>
+    <button id="btn6">ul li:first-child</button>
+    <button id="btn7">[href]</button>
+    <button id="btn8">a[target='_blank']</button>
+    <button id="btn9">a[target!='_blank']</button>
+    <button id="btn10">:button</button>
+    <button id="btn11">tr:even</button>
+    <button id="btn12">tr:odd</button>
+    <br />
+  </body>
+</html>
